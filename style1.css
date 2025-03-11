@@ -1,0 +1,249 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat", serif;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0px auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    padding: 20px 0;
+    background-color: #750DB5;
+}
+
+.header-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-wrapper h4 {
+    font-size: 25px;
+    font-weight: 700;
+    color: #ffff;
+}
+
+.header-wrapper nav {
+    display: flex;
+    gap: 30px;
+}
+
+.header-wrapper nav a {
+    color: #ffff;
+}
+
+.banner {
+    padding: 80px 0px;
+}
+
+.banner-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.banner-wrapper > div {
+    width: 50%;
+}
+
+.banner-wrapper h1 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 30px;
+    line-height: 75px;
+}
+
+.banner-wrapper p {
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+
+.banner-wrapper h1 > span:nth-child(3) >span {
+    color: #750DB5;
+}
+
+.banner-wrapper > div > div {
+    display: flex;
+    gap: 30px;
+}
+
+.banner-wrapper > div > div > a {
+    padding: 15px 40px;
+    border-radius: 12px;
+}
+
+.banner-wrapper > div > div a:nth-child(1) {
+    background-color: #FFA92C;
+    color: #ffffff;
+    box-shadow: 0px 4px 20px 0px #FFA92C;
+}
+
+.banner-wrapper > div > div a:nth-child(2) {
+    color: #14121F;
+}
+
+@media only screen and (min-width: 1115px) {
+    .banner-wrapper h1 {
+        font-size: 48px;
+    }
+}
+
+@media only screen and (min-width: 998px) {
+    .line-break {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 998px) {
+    .banner-wrapper {
+        flex-direction: column;
+    }
+
+    .banner-wrapper > div {
+        width: 100%;
+        text-align: center;
+    }
+
+    .banner-wrapper > div > div {
+        justify-content: center;
+        margin-bottom: 50px;
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    .header-wrapper {
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.job-cards {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+}
+
+.job-card:nth-child(1) {
+    background-color: #0C445C;
+    color: #ffffff;
+}
+
+.job-card:nth-child(2) {
+    background-color: #5B2C98;
+    color: #ffffff;
+}
+
+.job-card:nth-child(3) {
+    background-color: #7F3219;
+    color: #ffffff;
+}
+
+.job-cards h4 {
+    font-size: 28px;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
+
+.job-cards p {
+    font-size: 15px;
+    font-weight: 300;
+    margin-bottom: 5px;
+}
+
+.banner-main-wrapper h2 {
+    font-size: 35px;
+    font-weight: 650;
+}
+
+.job-card {
+    padding: 15px 15px;
+    border-radius: 20px;
+    width: 30%;
+}
+
+.banner-main-wrapper .line-break {
+    line-height: 25px;
+}
+
+.job-card:nth-child(1) a, .job-card:nth-child(2) a {
+    color: #ffffff;
+    border: 2px solid #ffff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.job-card:nth-child(1) >div, .job-card:nth-child(2) >div, .job-card:nth-child(3) >div {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+
+.job-card:nth-child(3) a {
+    background-color:#FFA92C;
+    color: #000000;
+    border: 2px solid #ffff;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    font-weight: 500;
+}
+
+.footer-wrapper {
+    margin-top: 100px;
+    color: #4254F4;
+}
+
+.footer {
+    background-color: #D6D6D6;
+}
+
+.footer-wrapper p {
+    padding: 15px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+@media only screen and (max-width: 1000px) {
+    .job-cards {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    .job-card:nth-child(1), .job-card:nth-child(2) {
+        width: 48%;
+    }
+
+    .job-card:nth-child(3) {
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .job-cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+    }
+
+    .job-card:nth-child(1), .job-card:nth-child(2), .job-card:nth-child(3){
+        width: 100%;
+    }
+}
